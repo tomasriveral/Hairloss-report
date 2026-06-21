@@ -1,3 +1,10 @@
+# nix artifacts
+result
+
+# images are not pushed to github for privacy reasons, but we do keep the empty directory
+Images/*
+!Images/.gitkeep
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
