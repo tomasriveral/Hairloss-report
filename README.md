@@ -31,10 +31,11 @@ If you want to change the models or the number of repetitions, a quick run of `r
 For privacy reason, this repo does not contain the initial dataset of images.
 
 Your dataset needs to :
-* focus on thethe person's head. Crop pictures if needed.
+* focus on the person's head. Crop pictures if needed.
 * follow this naming logic : `yyyy-mm-dd-nna` where `yyyy-mm-dd` follows [iso 8601](https://en.wikipedia.org/wiki/ISO_8601), `nn` is a number between 00 and 99 (used in cases there are multiple images for the same day and `a` is the angle of the photo (`t` for top, `l` for lateral and `f` for face). If you don't know the exact date, estimate it. There are two helper script in this repo (just fix the shebang and directory paths). `rename.sh` renames all the files (this could break stuff, be careful) into their last modified date. You just need to crop them and add the number and angles. `checkNaming.sh` checks if the files are correctly named (works on `.png` for other format adapt the regex).
 * You should try to use the best quality pictures.
 
+Note : Counterintuitively, from our testing, the top angle is the least reliable. I don't know if it's because of the dataset.
 
 ### Graphs
 
